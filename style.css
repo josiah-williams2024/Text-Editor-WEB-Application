@@ -1,0 +1,64 @@
+/* 
+    FILE         : style.css
+    PROJECT      : A5_textEditor
+    PROGRAMMER   : Josiah Williams
+    FIRST VERSION: 2025-12-6
+    DESCRIPTION  : Stylesheet for text editor. 
+                   Handles layout, colors, form formatting and buttons
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;   
+    align-items: center;        
+    height: 100vh;              
+}
+
+
+.editorBox {
+    width: 900px;              
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    overflow: hidden;         
+}  
+
+
+.menuBar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+}
+
+.menuBar label {
+    font-weight: bold;
+}
+
+.menuBar select, .menuBar button {
+    padding: 7px 12px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+}
+
+.menuBar button {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 500px;                
+    padding: 15px;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+}
+

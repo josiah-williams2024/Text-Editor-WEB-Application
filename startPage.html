@@ -1,0 +1,31 @@
+<!--
+    FILE         : startPage.html
+    PROJECT      : A5_textEditor
+    PROGRAMMER   : Josiah Williams
+    FIRST VERSION: 2025-12-6
+    DESCRIPTION  : The html structure for my text editor and starting page
+-->
+<html>
+<head>
+    <title>My Text Editor</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="textEditor.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="editorBox">
+    <div class="menuBar">
+        <label for="listOfFiles">Select:</label>
+        <select id="listOfFiles">
+            <option value="">-- Choose a file --</option>
+        </select>
+        <button id="openButton">Open</button>
+        <button id="saveButton">Save</button>
+        <button id="saveAsButton">Save as</button>
+    </div>
+
+    <textarea id="editorSpace" placeholder="Enter text here...."></textarea>
+</div>
+</body>
+</html>
